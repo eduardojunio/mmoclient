@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace MyGameClient {
-	public class Player : MonoBehaviour {
-
-		public struct PlayerPosition {
+	public class Player {
+		public struct Coordinates {
 			public float x, y;
-			public PlayerPosition (float x, float y) {
+			public Coordinates (float x, float y) {
 				this.x = x;
 				this.y = y;
 			}
 		}
 
-		// Use this for initialization
-		void Start () {
-			
-		}
-		
-		// Update is called once per frame
-		void Update () {
-			
+		public Coordinates coordinates;
+		public string ipAddress;
+		public int portNumber;
+
+		public Player(Coordinates coordinates, string ipAddress, int portNumber) {
+			this.coordinates = coordinates;
+			this.ipAddress = ipAddress;
+			this.portNumber = portNumber;
 		}
 	}
 }

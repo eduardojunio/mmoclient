@@ -7,10 +7,10 @@ namespace MyGameClient {
 		[Range(1, 100)]
 		public int speed;
 
-		public delegate void MoveAction (Player.PlayerPosition playerPosition);
+		public delegate void MoveAction (PlayerPositionMessage playerPosition);
 		public static event MoveAction OnMovement;
 
-		private Player.PlayerPosition playerPosition;
+		private PlayerPositionMessage playerPosition = new PlayerPositionMessage ();
 
 		void Start () {
 			speed = 10;

@@ -33,6 +33,7 @@ test-results/
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
+/[Bb]inaries/
 
 # Visual Studio 2015 cache directory
 /.vs/
